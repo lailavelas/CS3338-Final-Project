@@ -1,0 +1,135 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{hyperref}
+\usepackage{longtable}
+\title{User Manual - Machine Learning Platform for Intelligent Water Systems Management - Final Project}
+\author{Robert Castro\\
+Calvin Chau\\
+Yvan Michel Kemsseu Yobeu\\
+Laila Velasquez\\
+Kassandra Vera}
+\date{Friday, May 9, 2025}
+
+\begin{document}
+\maketitle
+\pagebreak
+\tableofcontents
+\pagebreak
+
+\section{Introduction}
+\subsection{Purpose}
+This User Manual provides step-by-step guidance for users to effectively navigate and utilize the Intelligent Water Systems Management Platform.
+
+\subsection{Overview}
+The platform allows users to monitor water consumption, detect anomalies, and optimize water usage through real-time data visualization and predictive analytics.
+
+\section{Jira Link}
+You can access the Jira board for project management and sprint planning here: \url{https://csula-kv.atlassian.net/jira/software/projects/WSM/boards/6}
+
+\section{Formal Objective Breakdown}
+The primary objectives of this platform are:
+\begin{itemize}
+\item Real-time monitoring of water consumption
+\item Automated alerts for leak detection
+\item Predictive analysis for maintenance
+\item Detailed analytics for optimizing water usage
+\end{itemize}
+
+\section{Goals and Importance}
+This platform is designed to bridge the gap in water consumption monitoring by providing:
+\begin{itemize}
+\item Enhanced water usage efficiency
+\item Early detection of leaks to prevent waste
+\item Data-driven insights for better resource management
+\end{itemize}
+By offering real-time monitoring and predictive analytics, it empowers municipalities and property owners to optimize water consumption and reduce waste.
+
+\section{Installation and Setup}
+\subsection{System Requirements}
+\begin{itemize}
+\item Docker (latest version)
+\item Node.js (for frontend)
+\item SQL Database
+\end{itemize}
+
+\subsection{Installation Steps}
+\begin{enumerate}
+\item Clone the repository from GitHub.
+\item Navigate to the project directory.
+\item Run \texttt{docker-compose up} to initialize all services.
+\item Open the application at \url{http://localhost:5000}.
+\end{enumerate}
+
+\subsection{Docker Configuration}
+The Docker setup includes:
+\begin{itemize}
+\item \textbf{Frontend}: React-based dashboard
+\item \textbf{Backend}: Flask for API management
+\item \textbf{Database}: SQL instance for data storage
+\end{itemize}
+
+\section{User Interface Guide}
+\subsection{Dashboard Overview}
+The main dashboard displays:
+\begin{itemize}
+\item Real-time water consumption data
+\item Alerts for abnormal usage
+\item System health status
+\end{itemize}
+
+\subsection{Analytics Page}
+\begin{itemize}
+\item Graphical representation of historical data
+\item Comparative analysis of water usage trends
+\end{itemize}
+
+\subsection{Settings}
+\begin{itemize}
+\item Sensor configurations
+\item Alert preferences
+\end{itemize}
+
+\subsection{Reports}
+\begin{itemize}
+\item Generate and export reports in CSV or PDF formats
+\end{itemize}
+
+\section{Usage Instructions}
+\subsection{Logging In}
+\begin{enumerate}
+\item Open the application at \url{http://localhost:5000}.
+\item Enter your username and password.
+\item Click \textbf{Login}.
+\end{enumerate}
+
+\subsection{Viewing Data}
+Navigate to the \textbf{Dashboard} to see live metrics.
+
+\subsection{Configuring Alerts}
+Go to \textbf{Settings} and enable notifications for high usage or leaks.
+
+\subsection{Generating Reports}
+Click on \textbf{Reports} and select the time range for data.
+
+\section{Troubleshooting}
+\subsection{Common Issues}
+\begin{itemize}
+\item \textbf{Docker container not starting} → Verify Docker installation and run \texttt{docker-compose up --build}.
+\item \textbf{Dashboard not loading} → Clear browser cache and retry.
+\end{itemize}
+
+\subsection{Error Messages}
+\begin{itemize}
+\item \textbf{500 Internal Server Error} → Restart Docker containers.
+\item \textbf{404 Not Found} → Check Docker logs for missing dependencies.
+\end{itemize}
+
+\section{Appendix}
+\subsection{API Documentation}
+Refer to the API endpoints for detailed usage.
+
+\subsection{Database Schema}
+SQL-based with normalized tables for optimized querying.
+
+\end{document}
