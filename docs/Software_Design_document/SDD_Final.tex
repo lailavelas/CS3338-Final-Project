@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{hyperref}
+\usepackage{longtable}
+
+\title{Software Design Document (SDD) - Machine Learning Platform for Intelligent Water Systsems Management - Final Project}
+\author{Robert Castro\\
+Calvin Chau\\
+Yvan Michel Kemsseu Yobeu\\
+Laila Velasquez\\
+Kassandra Vera}
+\date{Friday, May 9, 2025}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+
+\newpage
+
+\section*{Revision History}
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Name & Date & Reason For Changes & Version \\
+\hline
+Laila Velasquez & 5/5 & 1.0-2.5 & 1.0 \\
+\hline
+Laila Velasquez & 5/7 & 3.0-4.0 & 1.1 \\
+\hline
+ &  &  &  \\
+\hline
+ &  &  &  \\
+\hline
+ &  &  &  \\
+\hline
+ &  &  &  \\
+\hline
+ &  &  &  \\
+\hline
+ &  &  &  \\
+\hline
+ &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\newpage
+
+\section{Introduction}
+\subsection{Purpose}
+The purpose of this Software Design Document (SDD) is to provide a detailed architecture and design overview of the Intelligent Water Systems Management Platform. This platform is designed to optimize water usage, monitor real-time water consumption, and predict maintenance needs through integrated sensor networks and data analytics.
+
+\subsection{Intended Audience}
+This document is intended for:
+\begin{itemize}
+\item Software developers implementing the platform
+\item Project managers overseeing development
+\item Stakeholders evaluating project progress
+\item Quality assurance teams for testing and validation
+\end{itemize}
+
+\subsection{Overview}
+The Intelligent Water Systems Management Platform leverages real-time data from water sensors to track consumption, detect leaks, and optimize usage patterns. It is designed for municipalities, industrial complexes, and residential areas to achieve efficient water management.
+
+\section{System Architecture}
+\subsection{Workflow}
+\begin{itemize}
+\item Data Collection → Sensor Data Stream
+\item Data Processing → Real-time Monitoring \& Alerts
+\item Data Storage → Secure Cloud Database
+\item Data Visualization → Web Application Dashboard
+\end{itemize}
+
+\subsection{Site Breakdown}
+\begin{itemize}
+\item \textbf{Home Dashboard} - Overview of current water usage, alerts, and predictions.
+\item \textbf{Analytics Page} - Visualization of consumption trends and historical data.
+\item \textbf{Settings} - Configuration options for sensors and user preferences.
+\item \textbf{Reports} - Generation of monthly, weekly, and daily reports for users.
+\end{itemize}
+
+\section{User Interface}
+\subsection{How to Use}
+Users log in to the dashboard to view real-time data, configure settings, and download usage reports. Alerts are displayed prominently for immediate action.
+
+\subsection{Database Explanation}
+Data from sensors is stored in a cloud-based SQL database, allowing for efficient querying and analysis. The structure follows normalized principles for fast data access and integrity.
+
+\section{Glossary}
+\begin{itemize}
+\item \textbf{Sensor Network} - A collection of interconnected sensors that track water usage.
+\item \textbf{Dashboard} - The user interface for monitoring and managing water data.
+\item \textbf{SQL Database} - A structured database for storing sensor data securely.
+\item \textbf{Real-time Monitoring} - The capability to view water consumption as it happens.
+\end{itemize}
+
+\section{References}
+\begin{itemize}
+\item Project Source: \url{[https://ascent.cysun.org/project/project/view/216}
+\item Development Tools: Docker, Flask, SQL, HTML/CSS
+\item Documentation Standards: IEEE 1016-2009
+\end{itemize}
+
+\end{document}

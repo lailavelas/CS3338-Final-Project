@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{hyperref}
+\usepackage{longtable}
+\title{Design Specifications - Machine Learning Platform for Intelligent Water Systems Management - Final Project}
+\author{Robert Castro\\
+Calvin Chau\\
+Yvan Michel Kemsseu Yobeu\\
+Laila Velasquez\\
+Kassandra Vera}
+\date{Friday, May 9, 2025}
+
+\begin{document}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\subsection{Purpose}
+The Design Specifications document provides a comprehensive breakdown of the architecture, components, and features of the Intelligent Water Systems Management Platform. It is intended to serve as a reference for developers and stakeholders during implementation and testing phases.
+
+\subsection{Scope}
+This document covers the design and functional components of the platform, including database architecture, API specifications, and user interface design.
+
+\subsection{Design Goals}
+\begin{itemize}
+\item Optimize water usage through real-time monitoring
+\item Provide predictive analytics for maintenance
+\item Enhance user experience with intuitive dashboards
+\end{itemize}
+
+\section{System Design Overview}
+\subsection{Architecture Design}
+The platform is built on a client-server model using Flask for backend APIs and SQL for database management.
+
+\subsection{Component Design}
+\begin{itemize}
+\item \textbf{Frontend}: HTML, CSS, JavaScript for interactive dashboards
+\item \textbf{Backend}: Flask for routing and API management
+\item \textbf{Database}: SQL for structured data storage
+\item \textbf{Deployment}: Docker for containerized services
+\end{itemize}
+
+\section{Breakdown of Pages and Components}
+\subsection{Home Dashboard}
+Displays real-time water usage, health status, and alerts.
+
+\subsection{Analytics Page}
+Provides historical data visualization and comparative analysis.
+
+\subsection{Settings}
+Allows users to configure sensors, set thresholds for alerts, and manage account settings.
+
+\subsection{Reports}
+Generates detailed water consumption reports in PDF and CSV format.
+
+\subsection{API Endpoints}
+\begin{itemize}
+\item \textbf{GET /api/v1/water-usage} - Retrieves real-time water usage data.
+\item \textbf{POST /api/v1/alerts} - Sets alert thresholds for leak detection.
+\item \textbf{GET /api/v1/reports} - Downloads usage reports.
+\end{itemize}
+
+\section{Functional Requirements}
+\subsection{Sensor Data Ingestion}
+Real-time collection of water usage data.
+
+\subsection{Real-time Monitoring}
+Display live data on dashboards.
+
+\subsection{Alerts and Notifications}
+Automated alerts for anomalies (e.g., leaks).
+
+\subsection{Data Visualization}
+Graphical representation of water consumption.
+
+\section{Non-Functional Requirements}
+\begin{itemize}
+\item \textbf{Performance}: Capable of handling large datasets
+\item \textbf{Scalability}: Expandable to multiple regions
+\item \textbf{Security}: Encrypted data storage and secure API communication
+\end{itemize}
+
+\section{Technical Specifications}
+\subsection{Database Schema}
+Optimized for fast querying and retrieval.
+
+\subsection{API Endpoints}
+RESTful design for sensor data, user info, and reporting.
+
+\subsection{Docker and Flask Integration}
+Containerized services for scalability.
+
+\section{UI/UX Design Specifications}
+\subsection{Dashboard Layout}
+Intuitive and user-friendly.
+
+\subsection{User Interactions}
+Real-time updates and interactive graphs.
+
+\section{Testing and Validation}
+\begin{itemize}
+\item \textbf{Unit Testing}: For individual components
+\item \textbf{Integration Testing}: For combined modules
+\item \textbf{Performance Testing}: For large-scale usage
+\end{itemize}
+
+\section{Deployment Strategy}
+\subsection{Docker Configuration}
+Defined services for frontend, backend, and database.
+
+\subsection{Cloud Hosting Setup}
+For scalability and accessibility.
+
+\end{document}

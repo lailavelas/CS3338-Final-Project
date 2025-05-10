@@ -1,0 +1,124 @@
+\documentclass[10pt]{article}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\title{\textbf{SNAPSHOT}: Machine Learning Platform for Intelligent Water Systems Management - Senior Design Project Dashboard  }
+
+\author{Robert Castro\\
+Calvin Chau\\
+Yvan Michel Kemsseu Yobeu\\
+Laila Velasquez\\
+Kassandra Vera}
+\date{}
+
+\begin{document}
+\maketitle
+
+\newpage
+
+\section*{Start Objective - Snapshot 1}
+\subsection*{Objective}
+Our objective is to create an interactive and easy-to-use dashboard that tracks water usage in specified locations and notifies users when there are water leaks based on gathered data. Water leaks can be detected by finding outliers/anomalies in studying water usage in the dashboard.
+
+\subsection*{Project Framework}
+\textbf{Base Dependencies:}\\
+- Jira\\
+- Docker\\
+- Docker Hub\\
+- Testrail\\
+- LaTex (.tex)\\
+\\\textbf{Frontend} includes:\\
+- Framework/Libraries (React.js, Angular, Vue.js, etc)\\
+- CSS (Bootstrap, Material UI, Sass, Less, etc)\\
+- Package Managers (npm, yarn, etc)\\
+\\\textbf{Backend} includes:\\
+- Node.js \\
+- Express.js\\
+- Authentication/Authorization (jsonwebtoken, passport, etc)\\
+- Database (MongoDB, PostgreSQL, MySQL, etc)\\
+- Other (nodemon, bcrypt, multer)\\
+\\\textbf{Hosting and Development} includes:\\
+- Web Server (NGINX, Apache)\\
+- Cloud Platforms/Hosts (AWS, Heroku)\\
+\\\textbf{Dataset/Calculations} includes:\\
+- Saya Life\\
+- Algorithms (Artificial Neural Network and Logistic Regression)
+
+\newpage
+
+\subsection*{Task Delegation}
+To ensure a smooth development of the Dashboard, we made sure to group together the related tasks. And put each other into groups that would only focus on what is assigned to them, in which they are in charge of implementing and fixing any arising issues in their specific fields.\\
+\\\textbf{Front End \& Backend}: Laila Velasquez + Yvan Michel Kemsseu Yobeu\\
+The group in charge of the frontend and backend will develop a webpage that will allow its users to interact with the machine learning model, which will be implemented. Their goal is for users to input and receive back correct data from the model that shows the desired water usage information.\\
+\\\textbf{Machine Learning}: Calvin Chau + Kassandra Vera\\
+The group here will focus on working with clean data provided from the Metric team to develop an algorithm that ensures an accurate outcome.\\
+\\\textbf{Metrics}: Robert Castro\\
+Their job is to make sure the data provided by Saya is clean and easy to use to implement in our Machine learning model. Including working with the data so there aren't unnecessary features that make it complex, and to remove any possible outliers
+
+\subsection*{Target Timeline}
+\textbf{Month 1}: Create a basic, functional dashboard with general frontend and backend operations.\\
+- Basic Login Functionality\\
+- Basic User-Data encryption\\
+- Basic Redirect logic\\
+- Basic UI (User Input)\\
+\\\textbf{Month 2}: Integrate the target dataset AND allow the dashboard to generate water usage data.\\
+- Integrate Saya Life into the dashboard.\\
+- Allow filters based on locations to find specified water usage data in a given location.\\
+- Allow the dashboard to generate water usage data for a given location.\\
+- Update previous features to address new changes.\\
+
+\newpage
+
+\section*{1st Checkpoint Objective - Snapshot 2}
+\subsection*{Progress}
+Tasks delegated for Month 1 are completed. A working dashboard that is easily navigable by users and login functionalities ran smoothly. Users can log in and out, and their login information is stored and encrypted within the system.\\
+Tasks delegated for Month 2 build on top of Month 1. Some time and struggle regarding the size of the dataset were taken to properly integrate Saya Life's dataset into the system. Features from Month 1 were properly updated, as mainly some UI and redirect logic needed to be updated. Additionally, users were able to filter locations based on the dataset's Address section and some adjustments to the dataset itself. After filtering a location, data regarding water usage was properly shown through selectable graphs/charts through a drop-down. 
+\subsection*{Target Timeline}
+\textbf{Months 3 AND 4}: Allow the system to update and study water usage data in user-marked locations in real time and notify when there are potential leaks.\\
+- Allow users to mark a filtered location.\\
+- Allow users to sort locations based on their real-world location.\\
+- Allow the system that (with user consent) track their location in real time and send notifications.\\
+- Allow the system to calculate outliers/anomalies to predict potential leaks through consulting a machine-learning model.\\
+- Allow the user to simulate water usage data in a given location.\\
+- Allow the user to export water usage data (simulated/real-time) into a readable file.
+
+\newpage
+
+\section*{2nd Checkpoint Objective - Snapshot 3}
+\subsection*{Progress}
+Tasks delegated to Months 3 AND 4 improve and build on aspects of Month 2. Users can simulate scenarios (forecast leakages) from testing variables of water usage data. Users can also save their simulations/actual water usage data as a readable PDF file. Most features from Month 1 were properly featured, most notably the additional UI and redirection needed for data simulation. A notification system was successfully added, and a user settings tab is semi-implemented to appropriate privacy settings. Finally, a proper leakage calculator is implemented with the focused algorithms to predict/forecast water leakages by spotting outliers/anomalies in both real-time and simulated water usage data in a given location.
+\subsection*{Target Timeline}
+\textbf{Month 5}: Fully implement the user-settings page to allow the system to adjust for and comply with user specifications.\\
+- Update notification and user consent settings and add them to the user-settings page.\\
+- Implement accessibility settings for ease of use for users with impaired capabilities.\\
+- Implement a bug reporting tab in the user-settings page to allow users to send proper bug reports and feedback to admins/developers.\\
+- Implement a credits tab in the user-settings page to properly credit sources used to create the system and dashboard.\\
+\\\textbf{Month 6}: Finalize features implemented from the previous months.\\
+- Allow a small group of people to test the dashboard in a controlled setting.\\
+- Make changes/fixes based on feedback.\\
+- Write up required documentation (SDD, SRS, User Manual, etc).
+
+\newpage
+
+\section*{Due Date Checkpoint - Snapshot 4}
+\subsection*{Reflection on What's Completed}
+Throughout the six months of implementation, the dashboard has progressed from a foundational framework to a feature-rich system capable of tracking, analyzing, and forecasting water usage and potential leakages in targeted buildings. Key features successfully implemented include:\\
+\\- Secure user login and authentication with OAuth and bcrypt\\
+- Integration of the Saya Life dataset with location-based filtering\\
+- Real-time and simulated data visualization through interactive graphs\\
+- Anomaly detection using trained machine learning models (Artificial Neural Network and Logistic Regression)\\
+- A notification system that alerts users of potential leaks\\
+- Export functionality to generate readable PDF reports\\
+- A customizable user settings page for privacy and accessibility\\
+- A bug reporting tool integrated into the UI for developer feedback
+\subsection*{Future Plans}
+While the main goals of the dashboard were met, some features were thought about but weren't implemented. These include:\\
+\\- Allowing multiple types of devices to access the dashboard.\\
+- Add support for additional machine learning algorithms, such as Random Forest, to improve accuracy in leak detection.\\
+- Allowing users to personalize the layout and alerts based on their preferences or building type.\\
+- Allowing cross-platform data collection from other smart building systems, such as temperature sensors.\\
+- Developing a separate admin dashboard with aggregate statistics and user usage insights.\\
+- Add localization for multiple languages to support broader accessibility.
+
+\end{document}
