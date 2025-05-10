@@ -1,1 +1,2 @@
 GitHub Repository Link: https://github.com/lailavelas/CS3338-Final-Project
+Jira Link: https://csula-kv.atlassian.net/jira/software/projects/WSM/boards/6
