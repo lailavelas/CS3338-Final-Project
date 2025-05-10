@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - database
+    environment:
+      - DATABASE_URL=postgres://user:password@database:5432/wsm_db
+
+  database:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: wsm_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - wsm_db_data:/var/lib/postgresql/data
+
+volumes:
+  wsm_db_data:
