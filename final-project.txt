@@ -1,2 +1,3 @@
 GitHub Repository Link: https://github.com/lailavelas/CS3338-Final-Project
 Jira Link: https://csula-kv.atlassian.net/jira/software/projects/WSM/boards/6
+Previous Senior Design Topic: https://ascent.cysun.org/project/project/view/216
